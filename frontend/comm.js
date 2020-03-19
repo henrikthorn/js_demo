@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("#cleverButton").click(function(){
     $.get( "http://localhost:4000/newEndpoint", function( data ) {
-      $( "#cleverID" ).text( data.sample );
+      $( "#cleverID" ).text( data.sample._name );
     });
   });
 });
